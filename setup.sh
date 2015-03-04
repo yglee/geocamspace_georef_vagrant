@@ -2,7 +2,7 @@
 
 # make a fresh git checkout in a folder that will be shared with the VM
 if [ ! -d geoRef ]; then
-  git clone --recursive https://github.com/yglee/geoRef.git
+  git clone --recursive https://babelfish.arc.nasa.gov/git/geocam_space
   (cd geoRef && git submodule foreach git checkout master)
 fi
 
